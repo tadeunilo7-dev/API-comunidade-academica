@@ -1,72 +1,39 @@
 # API
-
 API e interface web para uma comunidade acadêmica. O sistema permite que estudantes criem perfis, encontrem pessoas com interesses em comum, publiquem projetos e postagens, organizem eventos e encontros, participem de grupos de estudo e conversem.
 
 Sistemas de Informação - Estácio UNIMETA
 
 ## Integrantes
-
 1. Nilo Tadeu da Silva Meleiro Neto
 2. Guilherme de Souza Bezerra
 3. Nemuel Kalebe da Silva Lacerda
 4. Rubisney de Abreu Maia Júnior
 
 ## Tecnologias
+Python, FastAPI, Pydantic, SQLite, React, css, Typescript, Vite, Docker e Docker Compose
 
-- Python
-- FastAPI e Pydantic
-- SQLite
-- React e TypeScript
-- Vite
-- Docker e Docker Compose
 
 ## Como rodar
-
-### Opção recomendada: Docker
-
+### Docker
 1. Instale e abra o [Docker Desktop]
 Link de download: https://www.docker.com/products/docker-desktop/
 2. Baixe o projeto pelo GitHub em **Code → Download ZIP** e extraia o arquivo, ou clone o repositório.
-3. Abra um terminal na pasta do projeto e execute:
-
-   ```bash
-   docker compose up --build
-   ```
-
+3. Acesse a pasta do projeto pelo terminal ("cd caminho_da_pasta") e execute: "docker compose up --build"
 4. Acesse a interface em <http://localhost:5173>.
 5. A API fica em <http://localhost:8000>; sua documentação interativa está em <http://localhost:8000/docs>.
 
-Para encerrar, pressione `Ctrl+C` no terminal. O banco SQLite fica em um volume Docker e continua disponível após reiniciar os serviços. Para apagar o banco e os dados salvos, execute `docker compose down -v`.
+Para encerrar, pressione "Ctrl+C" no terminal. O banco SQLite fica em um volume Docker e continua disponível após reiniciar os serviços. Para apagar o banco e os dados salvos, execute "docker compose down -v".
 
-Contas de demonstração usam a senha `aluno123`:
-
-- `larissa@exemplo.com`
-- `caio@exemplo.com`
-- `bruna@exemplo.com`
-- `pedro@exemplo.com`
-- `marina@exemplo.com`
-- `rafael@exemplo.com`
-- `sofia@exemplo.com`
-- `thiago@exemplo.com`
 
 ### Rodar sem Docker
-
 É necessário ter Python e Node.js instalados.
 
-1. Na pasta do projeto, instale as dependências da API e inicie o servidor:
-
-   ```bash
+1. Acesse a pasta do projeto no terminal e instale as dependências da API e inicie o servidor:
    python -m pip install -r requirements.txt
    python -m uvicorn fastAPI:app --reload
-   ```
-
 2. Em outro terminal, instale as dependências da interface e inicie o Vite:
-
-   ```bash
    npm install
    npm run dev
-   ```
-
 3. Abra o endereço informado pelo Vite, normalmente <http://localhost:5173>.
 
 ## Endpoints
