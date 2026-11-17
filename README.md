@@ -29,12 +29,12 @@ Para encerrar, pressione "Ctrl+C" no terminal. O banco SQLite fica em um volume 
 É necessário ter Python e Node.js instalados.
 
 1. Acesse a pasta do projeto no terminal e instale as dependências da API e inicie o servidor:
-   python -m pip install -r requirements.txt
-   python -m uvicorn fastAPI:app --reload
-2. Em outro terminal, instale as dependências da interface e inicie o Vite:
-   npm install
-   npm run dev
-3. Abra o endereço informado pelo Vite, normalmente <http://localhost:5173>.
+   "python -m pip install -r requirements.txt"
+   "python -m uvicorn fastAPI:app --reload"
+3. Em outro terminal, instale as dependências da interface e inicie o Vite:
+   "npm install"
+   "npm run dev"
+4. Abra o endereço informado pelo Vite, normalmente <http://localhost:5173>.
 
 ## Endpoints
 
